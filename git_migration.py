@@ -10,7 +10,6 @@ def yaml_parser(file_name):
 
 def git_to_git():
     for git_dir in git_list:
-        root_path = "/home/bprescott/syncd/"
         git_path = root_path+git_dir
         print("Beginning process for {}.").format(git_dir)
         print("Changing Directory to {}.").format(git_path)
@@ -41,4 +40,5 @@ def git_to_git():
 if __name__ == "__main__":
     git_remotes = yaml_parser("./git_info.yaml")["git_info"]
     git_list = list(git_remotes.keys())
+    root_path = yaml_parser("./git_info.yaml")["globals"]["root_directory"]
     git_to_git()
