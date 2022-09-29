@@ -5,7 +5,7 @@ import yaml
 
 def yaml_parser(file_name):
     with open(file_name, "r") as yamlfile:
-        yamldata = yaml.load(yamlfile)
+        yamldata = yaml.load(yamlfile, Loader=yaml.FullLoader)
     return yamldata
 
 def git_to_git():
@@ -39,16 +39,6 @@ def git_to_git():
             subprocess.Popen(["git", "push", "hub", "master"]).wait()
 
 if __name__ == "__main__":
-    git_list = yaml_parser("./git_info.yaml")[git_info][git_repos]
-    bb_remotes = yaml_parser("./git_info.yaml")[git_info][bitbucket_remotes]
-    gh_remotes = yaml_parser("./git_info.yaml")[git_info][github_remotes]
-    git_remotes = {}
-    for git in git_list:
-        for bb_remote in bb_remotes:
-            for gh_remote in gh_remotes:
-                git_remotes[git] = [bb_remote, gh_remote]
+    git_remotes = yaml_parser("./git_info.yaml")["git_info"]
+    git_list = list(git_remotes.keys())
     git_to_git()
-
-
-
-

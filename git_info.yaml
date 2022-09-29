@@ -1,34 +1,29 @@
 ---
 git_info:
-  - git_repos:
-    - "bss-ansible"
-    - "bss-pipeline"
-    - "av-scanner-service"
-    - "backupmon"
-    - "nomp"
-    - "Phoenix"
-    - "rds-pipeline"
-    - "rdsq"
-    - "writelink"
-
-  - bitbucket_remotes:
+  bss-ansible:
     - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-ansible.git"
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-pipeline.git"
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/av-scanner-service.git"
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/backupmon.git"
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/nomp.git"
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/phoenix.git"
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/rds-pipeline.git"
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/rdsq.git"
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/writelink.git"
-
-  - github_remotes:
     - "git@github.com:LexisNexis-RBA/bluesky-ansible.git"
+  bss-pipeline:
+    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-pipeline.git"
     - "git@github.com:LexisNexis-RBA/bluesky-jenkins-pipeline.git"
+  av-scanner-service:
+    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/av-scanner-service.git" 
     - "git@github.com:LexisNexis-RBA/bluesky-av-scanner-service.git"
+  backupmon:
+    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/backupmon.git"
     - "git@github.com:LexisNexis-RBA/bluesky-backupmon.git"
+  nomp:
+    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/nomp.git"
     - "git@github.com:LexisNexis-RBA/bluesky-nomp.git"
+  Phoenix:
+    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/phoenix.git"
     - "git@github.com:LexisNexis-RBA/bluesky-phoenix.git"
+  rds-pipeline:
+    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/rds-pipeline.git"
     - "git@github.com:LexisNexis-RBA/bluesky-rds-pipeline.git"
+  rdsq:
+    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/rdsq.git"
     - "git@github.com:LexisNexis-RBA/bluesky-rdsq.git"
+  writelink:
+    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/writelink.git"
     - "git@github.com:LexisNexis-RBA/bluesky-writelink.git"
