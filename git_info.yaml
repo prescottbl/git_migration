@@ -15,7 +15,7 @@ git_info:
   nomp:
     - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/nomp.git"
     - "git@github.com:LexisNexis-RBA/bluesky-nomp.git"
-  Phoenix:
+  phoenix:
     - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/phoenix.git"
     - "git@github.com:LexisNexis-RBA/bluesky-phoenix.git"
   rds-pipeline:
