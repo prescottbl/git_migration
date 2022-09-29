@@ -1,4 +1,6 @@
 ---
+globals:
+  root_directory: "/home/bprescott/syncd/"
 git_info:
   bss-ansible:
     - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-ansible.git"
