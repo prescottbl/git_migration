@@ -3,7 +3,6 @@
 import subprocess, os
 import yaml
 
-
 def yaml_parser(file_name):
     with open(file_name, "r") as yamlfile:
         yamldata = yaml.load(yamlfile)
