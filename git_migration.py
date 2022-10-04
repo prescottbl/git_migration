@@ -12,10 +12,11 @@ def git_to_git():
     for git_dir in git_list:
         git_path = root_path+git_dir
         print("Beginning process for {}.".format(git_dir))
-        print("Changing Directory to {}.".format(git_path))
         if os.path.exists(git_path):
             os.chdir(git_path)
-            if "hub" in subprocess.Popen(["git", "remote", "-v"]).context().wait():
+            git_check = subprocess.check_output(["git", "remote", "-v"])
+            if "hub" in str(git_check):
+                print("Changing Directory to {}.".format(git_path))
                 print("Pulling Changes from BitBucket.")
                 subprocess.Popen(["git", "pull", "origin master"]).wait()
                 print("Pushing Changes to GitHub.")
