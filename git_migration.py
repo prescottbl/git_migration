@@ -15,12 +15,13 @@ def git_to_git():
         if os.path.exists(git_path):
             os.chdir(git_path)
             git_check = subprocess.check_output(["git", "remote", "-v"])
+            print(str(git_check))
             if "hub" in str(git_check):
                 print("Changing Directory to {}.".format(git_path))
                 print("Pulling Changes from BitBucket.")
-                subprocess.Popen(["git", "pull", "origin master"]).wait()
+                subprocess.Popen(["git", "pull", "origin", "master"]).wait()
                 print("Pushing Changes to GitHub.")
-                subprocess.Popen(["git", "push", "hub master"]).wait()
+                subprocess.Popen(["git", "push", "hub", "master"]).wait()
             else:
                 print("Adding GitHub Remote.")
                 subprocess.Popen(["git", "remote", "add", "hub", git_remotes[git_dir][1]]).wait()
