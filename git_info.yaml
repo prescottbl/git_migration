@@ -1,31 +1,70 @@
 ---
 globals:
   root_directory: "/home/bprescott/syncd/"
-git_info:
+git_repos:
   bss-ansible:
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-ansible.git"
-    - "git@github.com:LexisNexis-RBA/bluesky-ansible.git"
+    bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-ansible.git"
+    gh_url: "git@github.com:LexisNexis-RBA/bluesky-ansible.git"
   bss-pipeline:
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-pipeline.git"
-    - "git@github.com:LexisNexis-RBA/bluesky-jenkins-pipeline.git"
+    bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-pipeline.git"
+    gh_url: "git@github.com:LexisNexis-RBA/bluesky-jenkins-pipeline.git"
   av-scanner-service:
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/av-scanner-service.git" 
-    - "git@github.com:LexisNexis-RBA/bluesky-av-scanner-service.git"
+    bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/av-scanner-service.git" 
+    gh_url: "git@github.com:LexisNexis-RBA/bluesky-av-scanner-service.git"
   backupmon:
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/backupmon.git"
-    - "git@github.com:LexisNexis-RBA/bluesky-backupmon.git"
+    bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/backupmon.git"
+    gh_url: "git@github.com:LexisNexis-RBA/bluesky-backupmon.git"
   nomp:
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/nomp.git"
-    - "git@github.com:LexisNexis-RBA/bluesky-nomp.git"
+    bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/nomp.git"
+    gh_url: "git@github.com:LexisNexis-RBA/bluesky-nomp.git"
   phoenix:
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/phoenix.git"
-    - "git@github.com:LexisNexis-RBA/bluesky-phoenix.git"
+    bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/phoenix.git"
+    gh_url: "git@github.com:LexisNexis-RBA/bluesky-phoenix.git"
   rds-pipeline:
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/rds-pipeline.git"
-    - "git@github.com:LexisNexis-RBA/bluesky-rds-pipeline.git"
+    bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/rds-pipeline.git"
+    gh_url: "git@github.com:LexisNexis-RBA/bluesky-rds-pipeline.git"
   rdsq:
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/rdsq.git"
-    - "git@github.com:LexisNexis-RBA/bluesky-rdsq.git"
+    bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/rdsq.git"
+    gh_url: "git@github.com:LexisNexis-RBA/bluesky-rdsq.git"
   writelink:
-    - "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/writelink.git"
-    - "git@github.com:LexisNexis-RBA/bluesky-writelink.git"
+    bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/writelink.git"
+    gh_url: "git@github.com:LexisNexis-RBA/bluesky-writelink.git"
+      #bss-4.x-blueexpressmanager:
+      #bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-4.x-blueexpressmanager.git"
+      #gh_url: "git@github.com:LexisNexis-RBA/BlueSky-4.x-BlueExpressManager.git"
+      #bss-4.x-bssportal:
+      #bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-4.x-bssportal.git"
+      #gh_url: "git@github.com:LexisNexis-RBA/BlueSky-4.x-BSSPortal.git"
+      #bss-4.x-desktop:
+      #bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-4.x-desktop.git"
+      #gh_url: "git@github.com:LexisNexis-RBA/BlueSky-4.x-Desktop.git"
+      #bss-4.x-installer:
+      #bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-4.x-installers.git"
+      #gh_url: "git@github.com:LexisNexis-RBA/BlueSky-4.x-Installers.git"
+      #bss-4.x-nfsinterface:
+      #bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-4.x-nfsinterface.git"
+      #gh_url: "git@github.com:LexisNexis-RBA/BlueSky-4.x-NFSinterface.git"
+      #bss-4.x-nrsboston.blueexpressmessageretriever:
+      #bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-4.x-nrsboston.blueexpressmessageretriever.git"
+      #gh_url: "git@github.com:LexisNexis-RBA/BlueSky-4.x-NRSBoston.BlueExpressMessageRetriever.git"
+      #bss-4.x-nrsfiledownloaderv2:
+      #bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-4.x-nrsfiledownloaderv2.git"
+      #gh_url: "git@github.com:LexisNexis-RBA/BlueSky-4.x-NRSfileDownloaderV2.git"
+      #bss-4.x-nrsfilterxssmodule:
+      #bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-4.x-nrsfilterxssmodule.git"
+      #gh_url: "git@github.com:LexisNexis-RBA/BlueSky-4.x-NRSFilterXSSModule.git"
+      #bss-4.x-salesprocessing:
+      #bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-4.x-sales-processing.git"
+      #gh_url: "git@github.com:LexisNexis-RBA/BlueSky-4.x-SalesProcessing.git"
+      #bss-4.x-salesparser:
+      #bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-4.x-salesparser.git"
+      #gh_url: "git@github.com:LexisNexis-RBA/BlueSky-4.x-SalesParser.git"
+      #bss-4.x-support:
+      #bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-4.x-support.git"
+      #gh_url: "git@github.com:LexisNexis-RBA/BlueSky-4.x-Support.git"
+      #bss-4.x-bss-reconciliation:
+      #bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/bss-4.x-bss-reconciliation.git"
+      #gh_url: "git@github.com:LexisNexis-RBA/BlueSky-4.x-BSSReconciliation.git"
+  tem:
+    bb_url: "ssh://git@bitbucket.fpa.rbxd.ds/nrsbss/tem.git"
+    gh_url: "git@github.com:LexisNexis-RBA/BlueSky-TEM.git"

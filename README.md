@@ -11,7 +11,16 @@ from BitBucket to GitHub as seamless as possible.
 
 ---
 
-Before running make sure that the `root_directory` in `git_info.yaml` exists and navigate to the directory where this script is stored.  
+Before running make sure that the `root_directory` in `git_info.yaml` exists and navigate to the directory where this script is stored. <br>
+The `root_directory` should be a directory where you would like to temporily clone all repos that are to be moved. 
+
+Under `git_repos` in `git_info.yaml` use the following format: <br>
+```
+  directory_name:
+    bb_url: <ssh url for bitbucket>
+    gh_url: <ssh url for GitHub>
+```
+<br> To run the script:
 `python3 git_migration.py`
 
 #### Report a problem
