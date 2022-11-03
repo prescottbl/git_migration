@@ -11,13 +11,13 @@ def yaml_parser(file_name):
 def git_to_git():
     for git_dir in git_list:
         git_path = root_path+git_dir
-        print("\nBeginning process for {}.\n".format(git_dir))
+        print(f"\nBeginning process for {git_dir}.\n")
         if os.path.exists(git_path):
+            print(f"Changing Directory to {git_path}.")
             os.chdir(git_path)
             git_check = subprocess.check_output(["git", "remote", "-v"])
             print(str(git_check))
             if "hub" in str(git_check):
-                print("Changing Directory to {}.".format(git_path))
                 print("Pulling Changes from BitBucket.")
                 subprocess.Popen(["git", "pull", "origin", "master"]).wait()
                 print("Pushing Changes to GitHub.")
@@ -32,7 +32,7 @@ def git_to_git():
         else:
             os.chdir(root_path)
             subprocess.Popen(["git", "clone", git_remotes[git_dir]["bb_url"]]).wait()
-            print("Changing Directory to {}.".format(git_path))
+            print(f"Changing Directory to {git_path}.")
             os.chdir(git_path)
             print("Adding GitHub Remote.")
             subprocess.Popen(["git", "remote", "add", "hub", git_remotes[git_dir]["gh_url"]]).wait()
