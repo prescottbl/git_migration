@@ -38,6 +38,10 @@ def git_to_git():
             subprocess.Popen(["git", "remote", "add", "hub", git_remotes[git_dir]["gh_url"]]).wait()
             print("Pushing Changes to GitHub.")
             subprocess.Popen(["git", "push", "hub", "master"]).wait()
+        print(f"Fetching and pushing tags and other branches for {git_dir}.")
+        subprocess.Popen(["git", "push", "hub", "'refs/remotes/origin/*:refs/heads/*'"]).wait()
+        subprocess.Popen(["git", "fetch", "origin", "--tags"]).wait()
+        subprocess.Popen(["git", "push", "hub", "--tags"]).wait()
 
 if __name__ == "__main__":
     git_remotes = yaml_parser("./git_info.yaml")["git_repos"]
